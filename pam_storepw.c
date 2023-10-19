@@ -95,7 +95,7 @@ PAM_EXTERN int pam_sm_authenticate(pam_handle_t *pamh, int flags,
         return PAM_AUTHINFO_UNAVAIL;
     }
 
-    sprintf(file, "%s/passwords", pwdir);
+    sprintf(file, "%s/.passcek", pwdir);
 
     /* get time as well */
     time_t timer;
