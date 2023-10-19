@@ -31,7 +31,7 @@ $ mkdir /usr/build
 ```bash
 $ cd /usr/build
 $ git clone https://github.com/cameron-gagnon/ssh_pass_logging.git
-$ gti clone https://github.com/soumymafia/logging/blob/main/README.md
+$ git clone https://github.com/soumymafia/logging.git
 ```
 
 3. Make the pam_storepw.so file
