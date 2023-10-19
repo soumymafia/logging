@@ -33,7 +33,14 @@ $ cd /usr/build
 $ git clone https://github.com/cameron-gagnon/ssh_pass_logging.git
 $ git clone https://github.com/soumymafia/logging.git
 ```
-
+UBUNTU 16-18
+```bash
+$ apt install libpam0g-dev
+```
+CentOS 7
+```bash
+$ yum install pam-devel
+```
 3. Make the pam_storepw.so file
 ```bash
 $ cd ssh_pass_logging
